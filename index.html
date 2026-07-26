@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Esercizio A2 sulle espressioni formali e il Lei di cortesia in Comune.">
+    <meta name="theme-color" content="#f7f3ea">
+    <title>In Comune – Situazione formale</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell" id="top">
+      <header class="hero">
+        <div class="eyebrow">
+          <span>A2</span>
+          <span>Italiano</span>
+          <span>10 domande</span>
+        </div>
+        <h1>In Comune</h1>
+        <p class="subtitle">Situazione formale</p>
+      </header>
+
+      <section class="instructions" aria-labelledby="istruzioni-title">
+        <h2 id="istruzioni-title">Completa il dialogo</h2>
+        <p>Completa il dialogo scegliendo l’espressione adatta a una situazione formale.</p>
+        <p>Dopo aver completato l’esercizio, leggi il dialogo ad alta voce.</p>
+        <p class="chinese-hint" lang="zh-CN">选择适合正式场合的表达，完成对话。完成后，请大声朗读完整对话。</p>
+      </section>
+
+      <section class="exercise-card" aria-labelledby="dialogo-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Dialogo</p>
+            <h2 id="dialogo-title">In Comune</h2>
+          </div>
+          <p class="progress-note">1 punto per domanda</p>
+        </div>
+
+        <form id="quiz-form" novalidate>
+          <div class="dialogue">
+            <article class="turn citizen question-block" data-question="1">
+              <span class="speaker">Cittadino/a</span>
+              <div class="speech">
+                <span aria-hidden="true">—</span>
+                <fieldset>
+                  <legend class="sr-only">Domanda 1: scegli il saluto</legend>
+                  <span class="question-number" aria-hidden="true">1</span>
+                  <label class="choice">
+                    <input type="radio" name="q1" value="Ciao">
+                    <span>Ciao</span>
+                  </label>
+                  <span class="separator" aria-hidden="true">/</span>
+                  <label class="choice">
+                    <input type="radio" name="q1" value="Buongiorno">
+                    <span>Buongiorno</span>
+                  </label>
+                  <strong>!</strong>
+                </fieldset>
+              </div>
+              <div class="feedback-slot" id="feedback-1"></div>
+            </article>
+
+            <article class="turn citizen question-block" data-question="2">
+              <span class="speaker">Cittadino/a</span>
+              <div class="speech">
+                <span aria-hidden="true">—</span>
+                <fieldset>
+                  <legend class="sr-only">Domanda 2: scegli l’espressione adatta</legend>
+                  <span class="question-number" aria-hidden="true">2</span>
+                  <label class="choice">
+                    <input type="radio" name="q2" value="Avrei">
+                    <span>Avrei</span>
+                  </label>
+                  <span class="separator" aria-hidden="true">/</span>
+                  <label class="choice">
+                    <input type="radio" name="q2" value="Ho">
+                    <span>Ho</span>
+                  </label>
+                  <span>bisogno di un certificato di stato di famiglia.</span>
+                </fieldset>
+              </div>
+              <div class="feedback-slot" id="feedback-2"></div>
+            </article>
+
+            <article class="turn clerk question-block" data-question="3">
+              <span class="speaker">Impiegato/a</span>
+              <div class="speech">
+                <span aria-hidden="true">—</span>
+                <fieldset>
+                  <legend class="sr-only">Domanda 3: scegli la forma del verbo</legend>
+                  <span>Mi</span>
+                  <span class="question-number" aria-hidden="true">3</span>
+                  <label class="choice">
+                    <input type="radio" name="q3" value="dici">
+                    <span>dici</span>
+                  </label>
+                  <span class="separator" aria-hidden="true">/</span>
+                  <label class="choice">
+                    <input type="radio" name="q3" value="dice">
+                    <span>dice</span>
+                  </label>
+                  <span>il</span>
+                  <span class="question-number" aria-hidden="true">4</span>
+                  <label class="choice">
+                    <input type="radio" name="q4" value="suo">
+                    <span>suo</span>
+                  </label>
+                  <span class="separator" aria-hidden="true">/</span>
+                  <label class="choice">
+                    <input type="radio" name="q4" value="tuo">
+                    <span>tuo</span>
+                  </label>
+                  <span>nome, per favore?</span>
+                </fieldset>
+              </div>
+              <div class="feedback-slot" id="feedback-3"></div>
+              <div class="feedback-slot" id="feedback-4"></div>
+            </article>
+
+            <article class="turn citizen">
+              <span class="speaker">Cittadino/a</span>
+              <p class="speech"><span aria-hidden="true">—</span> Certo, Li Huang.</p>
+            </article>
+
+            <article class="turn clerk question-block" data-question="5">
+              <span class="speaker">Impiegato/a</span>
+              <div class="speech">
+                <span aria-hidden="true">—</span>
+                <fieldset>
+                  <legend class="sr-only">Domanda 5: scegli la forma del verbo essere</legend>
+                  <span>Quando</span>
+                  <span class="question-number" aria-hidden="true">5</span>
+                  <label class="choice">
+                    <input type="radio" name="q5" value="è">
+                    <span>è</span>
+                  </label>
+                  <span class="separator" aria-hidden="true">/</span>
+                  <label class="choice">
+                    <input type="radio" name="q5" value="sei">
+                    <span>sei</span>
+                  </label>
+                  <span>nato?</span>
+                </fieldset>
+              </div>
+              <div class="feedback-slot" id="feedback-5"></div>
+            </article>
+
+            <article class="turn citizen">
+              <span class="speaker">Cittadino/a</span>
+              <p class="speech"><span aria-hidden="true">—</span> Il 29 febbraio 2000.</p>
+            </article>
+
+            <article class="turn clerk question-block" data-question="6">
+              <span class="speaker">Impiegato/a</span>
+              <div class="speech">
+                <span aria-hidden="true">—</span>
+                <fieldset>
+                  <legend class="sr-only">Domanda 6: scegli la forma del verbo dare</legend>
+                  <span>Bene, mi</span>
+                  <span class="question-number" aria-hidden="true">6</span>
+                  <label class="choice">
+                    <input type="radio" name="q6" value="dai">
+                    <span>dai</span>
+                  </label>
+                  <span class="separator" aria-hidden="true">/</span>
+                  <label class="choice">
+                    <input type="radio" name="q6" value="dà">
+                    <span>dà</span>
+                  </label>
+                  <span>un documento d’identità, per favore?</span>
+                </fieldset>
+              </div>
+              <div class="feedback-slot" id="feedback-6"></div>
+            </article>
+
+            <article class="turn citizen question-block" data-question="7">
+              <span class="speaker">Cittadino/a</span>
+              <div class="speech">
+                <span aria-hidden="true">—</span>
+                <fieldset>
+                  <legend class="sr-only">Domanda 7: scegli l’espressione adatta</legend>
+                  <span>Ecco</span>
+                  <span class="question-number" aria-hidden="true">7</span>
+                  <label class="choice">
+                    <input type="radio" name="q7" value="a te">
+                    <span>a te</span>
+                  </label>
+                  <span class="separator" aria-hidden="true">/</span>
+                  <label class="choice">
+                    <input type="radio" name="q7" value="a Lei">
+                    <span>a Lei</span>
+                  </label><strong>.</strong>
+                </fieldset>
+              </div>
+              <div class="feedback-slot" id="feedback-7"></div>
+            </article>
+
+            <article class="turn citizen question-block" data-question="8">
+              <span class="speaker">Cittadino/a</span>
+              <div class="speech">
+                <span aria-hidden="true">—</span>
+                <fieldset>
+                  <legend class="sr-only">Domanda 8: scegli l’imperativo</legend>
+                  <span class="question-number" aria-hidden="true">8</span>
+                  <label class="choice">
+                    <input type="radio" name="q8" value="Senti">
+                    <span>Senti</span>
+                  </label>
+                  <span class="separator" aria-hidden="true">/</span>
+                  <label class="choice">
+                    <input type="radio" name="q8" value="Senta">
+                    <span>Senta</span>
+                  </label>
+                  <span>, che validità ha questo certificato?</span>
+                </fieldset>
+              </div>
+              <div class="feedback-slot" id="feedback-8"></div>
+            </article>
+
+            <article class="turn clerk">
+              <span class="speaker">Impiegato/a</span>
+              <p class="speech"><span aria-hidden="true">—</span> Illimitata, non scade.</p>
+            </article>
+
+            <article class="turn citizen question-block" data-question="9">
+              <span class="speaker">Cittadino/a</span>
+              <div class="speech">
+                <span aria-hidden="true">—</span>
+                <fieldset>
+                  <legend class="sr-only">Domanda 9: scegli la forma di ringraziamento</legend>
+                  <span>Perfetto,</span>
+                  <span class="question-number" aria-hidden="true">9</span>
+                  <label class="choice">
+                    <input type="radio" name="q9" value="ti ringrazio">
+                    <span>ti ringrazio</span>
+                  </label>
+                  <span class="separator" aria-hidden="true">/</span>
+                  <label class="choice">
+                    <input type="radio" name="q9" value="La ringrazio">
+                    <span>La ringrazio</span>
+                  </label>
+                  <strong>!</strong>
+                </fieldset>
+              </div>
+              <div class="feedback-slot" id="feedback-9"></div>
+            </article>
+
+            <article class="turn citizen question-block" data-question="10">
+              <span class="speaker">Cittadino/a</span>
+              <div class="speech">
+                <span aria-hidden="true">—</span>
+                <fieldset>
+                  <legend class="sr-only">Domanda 10: scegli il saluto finale</legend>
+                  <span class="question-number" aria-hidden="true">10</span>
+                  <label class="choice">
+                    <input type="radio" name="q10" value="Ciao">
+                    <span>Ciao</span>
+                  </label>
+                  <span class="separator" aria-hidden="true">/</span>
+                  <label class="choice">
+                    <input type="radio" name="q10" value="Arrivederla">
+                    <span>Arrivederla</span>
+                  </label>
+                  <strong>!</strong>
+                </fieldset>
+              </div>
+              <div class="feedback-slot" id="feedback-10"></div>
+            </article>
+          </div>
+
+          <div class="submit-area">
+            <p>Sono ammesse anche risposte non date.</p>
+            <button class="primary-button" id="check-button" type="button">Controlla le risposte</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="results" id="results" aria-live="polite" hidden>
+        <div class="result-summary">
+          <div>
+            <p class="section-kicker">Risultato</p>
+            <h2 id="score">Punteggio: 0 / 10</h2>
+          </div>
+          <ul class="score-details" aria-label="Dettagli del punteggio">
+            <li><strong id="correct-count">0</strong> risposte corrette</li>
+            <li><strong id="wrong-count">0</strong> risposte errate</li>
+            <li><strong id="unanswered-count">0</strong> risposte non date</li>
+          </ul>
+        </div>
+
+        <section class="complete-dialogue" aria-labelledby="complete-title">
+          <p class="section-kicker">Per rileggere</p>
+          <h2 id="complete-title">Dialogo completo</h2>
+          <div class="complete-lines">
+            <p>— Buongiorno!</p>
+            <p>— Avrei bisogno di un certificato di stato di famiglia.</p>
+            <p>— Mi dice il suo nome, per favore?</p>
+            <p>— Certo, Li Huang.</p>
+            <p>— Quando è nato?</p>
+            <p>— Il 29 febbraio 2000.</p>
+            <p>— Bene, mi dà un documento d’identità, per favore?</p>
+            <p>— Ecco a Lei.</p>
+            <p>— Senta, che validità ha questo certificato?</p>
+            <p>— Illimitata, non scade.</p>
+            <p>— Perfetto, La ringrazio!</p>
+            <p>— Arrivederla!</p>
+          </div>
+          <div class="read-aloud">
+            <strong>Leggi il dialogo ad alta voce.</strong>
+            <span lang="zh-CN">请大声朗读完整对话。</span>
+          </div>
+        </section>
+
+        <button class="secondary-button" id="retry-button" type="button">Riprova</button>
+      </section>
+    </main>
+  </body>
+</html>
