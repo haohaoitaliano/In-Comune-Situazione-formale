@@ -47,9 +47,9 @@ const questions = [
     zh: "“La ringrazio”是正式表达；“ti ringrazio”用于使用 tu 的非正式关系。"
   },
   {
-    answer: "Arrivederla",
-    it: "“Arrivederla” è una formula di saluto formale. “Ciao” è informale.",
-    zh: "“Arrivederla”是正式的告别语；“Ciao”是非正式表达。"
+    answer: "ArrivederLa",
+    it: "“ArrivederLa” è una formula di saluto formale. “Ciao” è informale.",
+    zh: "“ArrivederLa”是正式的告别语；“Ciao”是非正式表达。"
   }
 ];
 
